@@ -10,6 +10,7 @@ The point of this project is to reimplement a simplified Gutenberg block (featur
 - Frontend: Server-rendered fallback + JS enhancement
 
 ## Tech Stack
+
 - Backend: Node.js + Express
 - DB: PostgreSQL
 - Frontend: React with Vite
@@ -33,14 +34,17 @@ The point of this project is to reimplement a simplified Gutenberg block (featur
 - Post selected post ID to `/api/featured`
 
 ### Milestone 3: Frontend Render
+
 - Create a route `/featured` that server-renders the selected post using EJS or Pug
 - Add a `<script>` to hydrate the React component on load for interactivity
 - Add client-side controls (e.g., change post inline via dropdown)
 
 ### Milestone 4: Server rendering fallback
+
 - Simulate non-JS environment: Does the block still render?
 
 ### Mileston 5: Polish and Reflect
+
 - What parts did WP make easier (e.g., media uploads, permissions, block registration)?
 - What parts did WP make harder (e.g., custom REST routes, async client interactivity)?
 - Optional: deploy on Render, fly.io, or Vercel
