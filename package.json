@@ -21,7 +21,7 @@
   "scripts": {
     "format": "prettier . --write",
     "lint": "eslint .",
-    "test": "jest",
+    "test": "docker compose up -d && jest && docker compose down",
     "migrate": "knex --knexfile ./knexfile.js migrate:latest",
     "seed": "knex --knexfile ./knexfile.js seed:run",
     "prepare": "husky"
