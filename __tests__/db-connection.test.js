@@ -9,4 +9,9 @@ describe("Database connection", () => {
     const result = await db.raw("SELECT 1 + 1 AS result");
     expect(result.rows[0].result).toBe(2);
   });
+  it("should return the seeded post entries", async () => {
+    const result = await db("posts").select();
+    expect(result).toHaveLength(4);
+    expect(result[0].author).toEqual("Ethan");
+  });
 });

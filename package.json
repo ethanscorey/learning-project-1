@@ -22,6 +22,8 @@
     "format": "prettier . --write",
     "lint": "eslint .",
     "test": "jest",
+    "migrate": "knex --knexfile ./knexfile.js migrate:latest",
+    "seed": "knex --knexfile ./knexfile.js seed:run",
     "prepare": "husky"
   }
 }
